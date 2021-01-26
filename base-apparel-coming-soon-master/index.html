@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap"
+   rel="stylesheet"
+  />
+  <link
+   rel="icon"
+   type="image/png"
+   sizes="32x32"
+   href="./images/favicon-32x32.png"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+   .attribution {
+    font-size: 11px;
+    text-align: center;
+   }
+   .attribution a {
+    color: hsl(228, 45%, 44%);
+   }
+  </style> -->
+ </head>
+ <body>
+  <header class="header">
+   <a href="#" class="header__logo"
+    ><img src="/images/logo.svg" alt="Base Apparel"
+   /></a>
+  </header>
+
+  <div class="hero">
+   <img src="/images/hero-mobile.jpg" alt="hero image" class="hero__image" />
+   <img
+    src="/images/hero-desktop.jpg"
+    alt="hero image"
+    class="hero__image--desktop"
+   />
+  </div>
+
+  <div class="dt-container">
+   <section class="content container">
+    <h1 class="content__title"><span>We're</span> coming soon</h1>
+    <p class="content__text">
+     Hello fellow shoppers! We're currently building our new fashion store. Add
+     your email below to stay up-to-date with announcements and our launch
+     deals.
+    </p>
+   </section>
+
+   <div class="mail container">
+    <div class="mail__input-field">
+     <form action="#">
+      <input type="text" name="email" placeholder="Email Address" />
+     </form>
+     <img
+      src="/images/icon-error.svg"
+      alt="error icon"
+      class="mail__error-icon hidden"
+     />
+     <button class="btn">
+      <img src="/images/icon-arrow.svg" alt="button" />
+     </button>
+    </div>
+    <p class="mail__label--valid"></p>
+   </div>
+  </div>
+
+  <footer class="footer">
+   <p class="footer__attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+     >Frontend Mentor</a
+    >. Coded by <a href="https://github.com/RabWinter">Rab Winter</a>.
+   </p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+ </body>
+</html>

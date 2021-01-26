@@ -1,80 +1,80 @@
 .mail {
- margin-top: 2rem;
-
- @include breakpoint-up(large) {
-  margin-top: 1rem;
- }
-
- &__input-field {
-  position: relative;
-  width: 100%;
-  border-radius: 50rem;
-  outline: 0;
-  padding: 1rem 1.2rem;
-  border: 1px solid $desaturatedRed;
-
-  input {
-   width: 100%;
-   color: $desaturatedRed;
-   font-family: "Josefin Sans", sans-serif;
-   font-size: $font-sm;
-   border: 0;
-   outline: 0;
-   padding-right: 6.5rem;
-   background: transparent;
-  }
-
-  .btn {
-   position: absolute;
-   top: 0;
-   right: 0;
-   height: 100%;
-   padding: 0 2.25rem;
-   border-radius: 50px;
-   border: 0;
-   outline: 0;
-   cursor: pointer;
-   background-image: linear-gradient($linear2);
-   transition: all 150ms ease-in-out;
-
-   @include breakpoint-up(large) {
-    padding: 0 3rem;
-   }
-
-   &:hover {
-    opacity: 0.8;
-    box-shadow: 7px 7px 20px hsla(0, 80%, 86%, 1);
-   }
-
-   // Arrow Icon
-   img {
-    position: absolute;
-    top: 50%;
-    left: 46%;
-    transform: translateY(-50%);
-    
-   }
-  }
- }
-
- // Form JS
- &__error-icon {
-  position: absolute;
-  top: 14px;
-  right: 89px;
-
+  margin-top: 2rem;
+ 
   @include breakpoint-up(large) {
-   right: 118px;
+   margin-top: 2rem;
+  }
+ 
+  &__input-field {
+   position: relative;
+   width: 100%;
+   border-radius: 50rem;
+   outline: 0;
+   padding: 1rem 1.2rem;
+   border: 1px solid $desaturatedRed;
+ 
+   input {
+    width: 100%;
+    color: $desaturatedRed;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: $font-sm;
+    border: 0;
+    outline: 0;
+    padding-right: 6.5rem;
+    background: transparent;
+   }
+ 
+   .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 2.25rem;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-image: linear-gradient($linear2);
+    transition: all 150ms ease-in-out;
+ 
+    @include breakpoint-up(large) {
+     padding: 0 3rem;
+    }
+ 
+    &:hover {
+     opacity: 0.8;
+     box-shadow: 7px 7px 20px hsla(0, 80%, 86%, 1);
+    }
+ 
+    // Arrow Icon
+    img {
+     position: absolute;
+     top: 50%;
+     left: 46%;
+     transform: translateY(-50%);
+    }
+   }
+  }
+ 
+  // Form JS
+  &__error-icon {
+   position: absolute;
+   top: 14px;
+   right: 89px;
+ 
+   @include breakpoint-up(large) {
+    right: 118px;
+   }
+  }
+ 
+  &__label--valid {
+   color: $softRed;
+   font-size: 0.8rem;
+   padding: 0 1.3rem;
   }
  }
-
- &__label--valid {
-  color: $softRed;
-  font-size: 0.8rem;
-  padding: 0 1.3rem;
+ 
+ .hidden {
+  opacity: 0;
  }
-}
-
-.hidden {
- opacity: 0;
-}
+ 
